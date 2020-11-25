@@ -144,7 +144,7 @@ namespace RFCEmulator
             char c = Char.MinValue;
             string trimmedStr = null;
             if (str != null) {
-                trimmedStr = str.Trim();
+                trimmedStr = str.ToUpper().Trim();
             }
             if (trimmedStr != null && trimmedStr.Length > 0) {
                 c = trimmedStr.ElementAt(0);
