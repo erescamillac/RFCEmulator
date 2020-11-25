@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Globalization;
+using System.Threading;
 
 namespace RFCEmulator
 {
@@ -278,6 +279,9 @@ namespace RFCEmulator
                 Console.WriteLine("¿Desea generar otro RFC? [y/n]: ");
                 continueP = Console.ReadKey().KeyChar;
             } while (Char.ToLower(continueP).Equals('y'));
+
+            Console.WriteLine("\n\tHasta la próxima. Gracias por utilizar RFCGenerator v1.0-Beta by Erick Escamilla Charco");
+            Thread.Sleep(1500);
            
         }
     }
